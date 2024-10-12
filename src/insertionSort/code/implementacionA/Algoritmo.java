@@ -1,16 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package insertionSort.code.implementacionA;
 
 /**
  *
  * @author Alfred
  */
+
 public class Algoritmo
 {
     /**
+     * "Este metodo no se recomienda implementar se desarrollo con fines de 
+     * aumntar la capacidad logica del programador."
      * Ordena usando un enfoque Insertion Sort.
      * Tambien implementa Arreglos dinamicos nativos de Java
      * NOTA: Se asimila mas a trabajar insersiones en una Lista
@@ -95,22 +95,5 @@ public class Algoritmo
         aux[pos] = dato;
         System.arraycopy(tmp, pos, aux, pos + 1, tmp.length - pos);
         return aux;
-    }
-
-    /**
-     * Desplica el arreglo para ser mostrado en consola
-     * @param arreglo arreglo a ser desplegado
-     */
-    public static void desplegar(int[] arreglo)
-    {
-        if (arreglo != null)
-        {
-            System.out.print("{\n   ");
-            for (int num : arreglo)
-            {
-                System.out.print(num + " ");
-            }
-            System.out.println("\n}");
-        }
-    }
+    }    
 }
